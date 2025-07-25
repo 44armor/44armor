@@ -1,0 +1,17 @@
+.elementor-15 .elementor-element.elementor-element-a62cccf{--display:flex;--min-height:85vh;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 0px;--background-transition:0.3s;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-15 .elementor-element.elementor-element-d871255{--display:flex;--gap:0px 0px;--background-transition:0.3s;border-style:none;--border-style:none;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:5px;--padding-bottom:5px;--padding-left:5px;--padding-right:5px;}.elementor-15 .elementor-element.elementor-element-d871255, .elementor-15 .elementor-element.elementor-element-d871255::before{--border-transition:0.3s;}.elementor-15 .elementor-element.elementor-element-d871255.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-15 .elementor-element.elementor-element-cca23cb{--display:flex;--background-transition:0.3s;--margin-top:15px;--margin-bottom:15px;--margin-left:0px;--margin-right:0px;}.elementor-15 .elementor-element.elementor-element-cca23cb:not(.elementor-motion-effects-element-type-background), .elementor-15 .elementor-element.elementor-element-cca23cb > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#CCD7DB;}.elementor-15 .elementor-element.elementor-element-cca23cb, .elementor-15 .elementor-element.elementor-element-cca23cb::before{--border-transition:0.3s;}.elementor-15 .elementor-element.elementor-element-fbba3e5 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-15 .elementor-element.elementor-element-fbba3e5{color:#000000;}@media(min-width:768px){.elementor-15 .elementor-element.elementor-element-d871255{--width:15%;}}/* Start custom CSS for html, class: .elementor-element-9d5aef0 */.a1
+{
+    font-size: 30px;
+    color: #4F47AA ;
+    font-weight:bold;
+   
+}
+
+.a2
+{
+     letter-spacing: 60px;
+}
+
+.a3
+{
+    letter-spacing:15px;
+}/* End custom CSS */
