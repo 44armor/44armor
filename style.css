@@ -13,6 +13,22 @@ header {
     font-size: 1.5em;
 }
 
+nav {
+    background-color: #0055a5;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 main {
     padding: 20px;
 }
