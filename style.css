@@ -159,6 +159,33 @@ body {
     border-radius: 8px; /* Rounded corners for image */
 }
 
+.member-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.member-entry-title {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.member-entry-title a {
+    text-decoration: none;
+    color: #003366;
+    display: block;
+}
+
+.member-entry-title:hover {
+    background-color: #f0f8ff;
+}
+
 /* --- 7. Footer --- */
 .site-footer {
     background-color: #000; /* Dark background for footer */
