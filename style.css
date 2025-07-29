@@ -159,39 +159,55 @@ body {
     border-radius: 8px; /* Rounded corners for image */
 }
 
-.member-list {
-    display: grid;
-    /* 每格至少 120px，空間夠時自動擴展並增加欄位 */
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 10px;
-    margin-top: 20px;
-}
+/* 將以下樣式添加到您的 style.css 檔案中 */
 
-.member-list h2 {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 24px;
-    color: #003366;
+.member-profiles-grid {
+    display: grid;
+    /* auto-fill: 自動填充列，直到沒有空間為止。
+       minmax(180px, 1fr): 每列最小寬度180px，最大佔據可用空間的1份。 */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px; /* 網格項目之間的間距 */
+    margin-top: 20px; /* 網格與上方內容的間距 */
 }
 
 .member-entry-title {
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
+    background-color: #f9f9f9; /* 淺色背景 */
+    border: 1px solid #ddd; /* 淺灰色邊框 */
+    border-radius: 8px; /* 圓角 */
+    padding: 15px;
     text-align: center;
-    font-size: 14px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.member-entry-title a {
-    text-decoration: none;
-    color: #003366;
-    display: block;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 輕微陰影 */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin: 0; /* 移除 h3 預設的 margin */
 }
 
 .member-entry-title:hover {
-    background-color: #f0f8ff;
+    transform: translateY(-5px); /* 鼠標懸停時上浮 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 陰影加深 */
+}
+
+.member-entry-title a {
+    color: #0693e3; /* 連結顏色 */
+    font-size: 1.1em; /* 稍微大一點的字體 */
+    font-weight: bold;
+    line-height: 1.4; /* 行高 */
+    display: block; /* 讓整個區塊可點擊 */
+}
+
+.member-entry-title a:hover {
+    color: #007bb5; /* 鼠標懸停時連結顏色變深 */
+}
+
+/* 手機版調整 (如果需要更細緻的控制，雖然 auto-fill 已經很好了) */
+@media (max-width: 767px) {
+    .member-profiles-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* 在小螢幕上可以縮小一點 */
+        gap: 10px;
+    }
+    .member-entry-title {
+        font-size: 1em;
+        padding: 10px;
+    }
 }
 
 .chapter-category h2 {
