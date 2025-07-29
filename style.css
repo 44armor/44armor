@@ -16,13 +16,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
     margin: 0;
     padding: 0;
 }
-/* 主要標題 */
-h2 {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 24px;
-    color: #003366;
-}
 
 ul, ol {
     list-style: none;
@@ -174,6 +167,13 @@ body {
     margin-top: 20px;
 }
 
+.member-list h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #003366;
+}
+
 .member-entry-title {
     border: 1px solid #ccc;
     padding: 10px;
@@ -195,6 +195,13 @@ body {
 }
 
 /* 每個分類標題 */
+.chapter-title h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #003366;
+}
+
 .chapter-category h3 {
     margin-top: 20px;
     background-color: #0055a5;
@@ -233,6 +240,22 @@ body {
 /* 滑鼠 hover 效果 */
 .pdf-link-entry:hover {
     background-color: #f0f8ff;
+}
+.editor-notes {
+    display: flex;
+    flex-direction: column;  /* 垂直排列 */
+    align-items: center;     /* 圖片置中 */
+    gap: 20px;               /* 圖片之間的間距 */
+    margin: 20px 0;
+}
+
+.editor-notes img {
+    width: 90%;              /* 圖片寬度 90% 螢幕寬度 */
+    max-width: 800px;        /* 最大寬度 800px */
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 /* --- 7. Footer --- */
