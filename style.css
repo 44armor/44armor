@@ -16,6 +16,13 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
     margin: 0;
     padding: 0;
 }
+/* 主要標題 */
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #003366;
+}
 
 ul, ol {
     list-style: none;
@@ -161,6 +168,7 @@ body {
 
 .member-list {
     display: grid;
+    /* 每格至少 120px，空間夠時自動擴展並增加欄位 */
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 10px;
     margin-top: 20px;
@@ -183,6 +191,47 @@ body {
 }
 
 .member-entry-title:hover {
+    background-color: #f0f8ff;
+}
+
+/* 每個分類標題 */
+.chapter-category h3 {
+    margin-top: 20px;
+    background-color: #0055a5;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+/* 連結列表使用 Grid 排版 */
+.pdf-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 10px 0 20px;
+}
+
+/* 每個 PDF 連結外框 */
+.pdf-link-entry {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+/* 連結文字 */
+.pdf-link-entry a {
+    color: #003366;
+    text-decoration: none;
+    display: block;
+}
+
+/* 滑鼠 hover 效果 */
+.pdf-link-entry:hover {
     background-color: #f0f8ff;
 }
 
